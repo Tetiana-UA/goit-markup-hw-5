@@ -583,6 +583,7 @@ ul {
   width: 264px;
 }
 .social-media {
+  margin-right: 80px;
 }
 .social-media-subtitle {
   font-size: 16px;
@@ -618,6 +619,61 @@ ul {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: var(--green);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-form-text {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+}
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: var(--white);
+  margin-right: 24px;
+}
+.footer-input::placeholder {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  background: var(--iris);
+  color: var(--white);
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-button-icon {
+  fill: var(--white);
 }
 
 /*---------Modal----------*/
@@ -765,11 +821,35 @@ ul {
   text-decoration-line: underline;
   line-height: 1.33;
 }
-.modal-check-text span {
+/*.modal-check-text span {
   width: 16px;
   height: 16px;
-  border-radius: 1px;
-  border-color;: var(--heavy-blue-modal), rgba(46, 47, 66, 0.4));
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: 250ms;
 }
-/* 40xv*/
+.modal-check:checked + .modal-check-text span {
+  fill: var(--ocean);
+  stroke: #ffffff;
+  background-color: var(--ocean);}*/
+
+/*.second:before {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: 250ms;
+}
+.modal-check:checked.second {
+  background-image: url(../images/icons.svg#icon-click-color);
+}*/
